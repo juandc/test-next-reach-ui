@@ -1,0 +1,29 @@
+{
+  "name": "test-next-reach-ui",
+  "version": "0.0.1",
+  "description": "Nextjs test of ui.reach.tech",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandc/test-next-reach-ui.git"
+  },
+  "keywords": [
+    "nextjs",
+    "reach-ui"
+  ],
+  "author": "Juan David Castro <me@juandc.co> (@juandc)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juandc/test-next-reach-ui/issues"
+  },
+  "homepage": "https://github.com/juandc/test-next-reach-ui#readme",
+  "dependencies": {
+    "next": "^6.1.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
