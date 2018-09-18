@@ -27,6 +27,7 @@
     "@reach/menu-button": "^0.1.7",
     "next": "^6.1.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "styled-jsx": "^3.0.2"
   }
 }

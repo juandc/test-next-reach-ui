@@ -13,7 +13,7 @@ import {
     MenuList,
     MenuItem
 } from '@reach/menu-button';
-// import * as styles from '@reach/menu-button/styles.css';
+import menuStyles from '@reach/menu-button/styles.css';
 
 export default class Home extends React.Component {
   constructor() {
@@ -55,21 +55,27 @@ export default class Home extends React.Component {
 
           <Menu>
             <MenuButton>
-              Actions <span aria-hidden>▾</span>
+              Your Cats <span aria-hidden>▾</span>
             </MenuButton>
-            <MenuList>
-              <MenuItem onSelect={() => alert("Download")}>Download</MenuItem>
-              <MenuItem onSelect={() => alert("Copy")}>Create a Copy</MenuItem>
-              <MenuItem onSelect={() => alert("Mark as Draft")}>Mark as Draft</MenuItem>
-              <MenuItem onSelect={() => alert("Delete")}>Delete</MenuItem>
-              <MenuLink
-                component="a"
-                href="https://reach.tech/workshops"
-              >Attend a Workshop</MenuLink>
+            <MenuList className="kittys">
+                <MenuItem onSelect={() => { }}>
+                    <img
+                        src="https://placekitten.com/100/100"
+                        alt="Fluffybuns the destroyer"
+                    />
+                    <span>Fluffybuns the Destroyer</span>
+                </MenuItem>
+                <MenuItem onSelect={() => { }}>
+                    <img
+                        src="https://placekitten.com/120/120"
+                        alt="Simon the pensive"
+                    />
+                    <span>Simon the pensive</span>
+                </MenuItem>
             </MenuList>
-          </Menu>
 
-          {/* <style jsx global>{`${styles}`}</style> */}
+            <style jsx global>{menuStyles}</style>
+          </Menu>
         </div>
     );
   }
